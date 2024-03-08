@@ -5,9 +5,9 @@ using ConsoleAppBank.View;
 Repositorio repositorio = new();
 MenuPrincipal menuPrincipal = new(repositorio);
 
-Titular titular1 = new("Petra Lemos Duarte", "12345678910", "Advogada");
-Titular titular2 = new("Raphaela Corrêa de Araújo Duarte", "10987654321", "Empresária");
-Titular titular3 = new("Julia Lemos Macedo", "78945612300", "Atriz");
+Titular titular1 = new("Petra Lopes Souza", "12345678910", "Advogada");
+Titular titular2 = new("João Pedro Camargo Antunes", "10987654321", "Empresário");
+Titular titular3 = new("Carla Silva Ribeiro", "78945612300", "Atriz");
 
 ContaCorrente conta1 = new ContaCorrente(titular1, 1010, "1234-5");
 ContaCorrente conta2 = new ContaCorrente(titular2, 2020, "6789-0");
