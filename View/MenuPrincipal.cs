@@ -15,7 +15,8 @@ internal class MenuPrincipal
         {"2", new EncerrarContaCommand() },
         {"3", new ListarTodasAsContasCommand() },
         {"4", new DepositarEmUmaContaCommand() },
-        {"5", new EncerrarAplicacaoCommand()}
+        {"5", new ExportarContasParaArquivoCommand() },
+        {"0", new EncerrarAplicacaoCommand()}
 
     };
 
@@ -28,7 +29,7 @@ internal class MenuPrincipal
     {
         string opcao = "";
 
-        while (opcao != "5")
+        while (opcao != "0")
         {
             Console.Clear();
             Console.WriteLine("SEJA BEM VINDO AO BYTEBANK!\n\n");
@@ -37,7 +38,8 @@ internal class MenuPrincipal
             Console.WriteLine("2 - Encerrar conta");
             Console.WriteLine("3 - Listar todas as contas ordenadas pelo nome do titular");
             Console.WriteLine("4 - Depositar em uma conta");
-            Console.WriteLine("5 - Encerrar aplicação");
+            Console.WriteLine("5 - Exportar contas para um arquivo csv");
+            Console.WriteLine("0 - Encerrar aplicação");
             Console.WriteLine("==========================");
             Console.Write("\nEscolha uma opção: ");
 

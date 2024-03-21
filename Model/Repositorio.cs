@@ -35,4 +35,9 @@ internal class Repositorio
         return ContasCorrente.Where(conta => conta.Titular.Cpf.Equals(cpf)).FirstOrDefault();
 
     }
+
+    public List<ContaCorrente> RetornaListaDeContas()
+    {
+        return new List<ContaCorrente>(ContasCorrente);
+    }
 }
